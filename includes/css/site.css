@@ -5243,3 +5243,16 @@ strong {
     background-color: #b4bf28; }
 .section-navigation .current_page_item a {
   background-color: #b4bf28; }
+
+.home__locate {
+  height: 150px; }
+  @media (min-width: 768px) {
+    .home__locate {
+      height: 250px; } }
+  @media (min-width: 860px) {
+    .home__locate {
+      height: 400px; } }
+
+.home__map {
+  height: 100%;
+  width: 100%; }

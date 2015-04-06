@@ -34,23 +34,5 @@ jQuery( document ).ready( function( $ ) {
         } );
     } );
 
-	/*
-	 *
-	 * Load the map with the center of australia in the middle!
-	 *
-	 * */
-	this.map = new GMaps({
-		div: '#js-location-map',
-		lat: -37.823960,
-		lng: 145.048803,
-		zoom: 5,
-		disableDefaultUI: true,
-		height: '100%',
-		width: '100%',
-		zoomControl: true,
-		minZoom: 4,
-		scrollwheel: false
-	});
-
 
 } );

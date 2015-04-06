@@ -7,7 +7,10 @@
  * @package _tk
  */
 ?>
-</div><!-- close .*-inner (main-content or sidebar, depending if sidebar is used) -->		</div><!-- close .row -->	</div><!-- close .container --></div><!-- close .main-content -->
+</div><!-- close .*-inner (main-content or sidebar, depending if sidebar is used) -->
+</div><!-- close .row -->
+</div><!-- close .container -->
+</div><!-- close .main-content -->
 
 <div class="site-footer">
 	<div class="container">

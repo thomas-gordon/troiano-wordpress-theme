@@ -1,0 +1,17 @@
+.home__locate{
+	height:150px;
+	@include bp(sm) {
+		height:250px;
+	}
+	@include bp(lg) {
+		height:400px;
+	}
+
+
+}
+
+
+.home__map{
+	height:100%;
+	width:100%;
+}

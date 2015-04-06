@@ -23,4 +23,71 @@ jQuery( document ).ready( function( $ ) {
     $( '.widget_recent_comments ul#recentcomments li' ).css( 'padding', '5px 15px');
 
     $( 'table#wp-calendar' ).addClass( 'table table-striped');
-} );
+
+	/*
+	 *
+	 * Load the map with the center of australia in the middle!
+	 *
+	 * */
+
+	var _self = this;
+
+ 	this.map = new GMaps({
+		div: '#js-map',
+		lat: -37.823960,
+		lng: 145.048803,
+		zoom: 12,
+		height: '100%',
+		width: '100%',
+		zoomControl: true,
+		minZoom: 4,
+		scrollwheel: false
+	});
+
+	_self.map_root = this.map.map;
+
+	this.default_icon  = {
+		url: window.location.protocol + "//" + window.location.host + "/" + 'wp-content/themes/_tk-master/includes/images/map-pin.png',
+		size: new google.maps.Size(44, 44),
+		origin: new google.maps.Point(0, 0),
+		anchor: new google.maps.Point(22, 22),
+		scaledSize: new google.maps.Size(44, 44)
+	};
+
+	var marker = {
+		lat: -37.823960,
+		lng: 145.048803,
+		infoWindow: {
+			content: '<strong>TROIANO &amp; ASSOCIATES</strong><br>'+
+				'SUITE 2.03/<br>' +
+				'737 BURWOOD RD,<br>' +
+				'HAWTHORN, 3122<br>' +
+
+				'P.O. BOX 3090 AUBURN 3123 VIC<br><br>'+
+
+				'<strong>P</strong>: +61 3 8862 6334<br>'+
+				'<strong>F</strong>: +61 3 8676 4989<br>'+
+				'<strong>E</strong>: <a href="mailto:contact_us@troianocpa.com.au">contact_us@troianocpa.com.au</a>'
+		},
+		click: function(e) {
+			console.log('marker clicked');
+		}
+
+	};
+
+	marker.icon = this.default_icon;
+
+	this.map.addMarker(marker);
+
+
+	google.maps.event.addListener(_self.map_root, 'zoom_changed', function() {
+		google.maps.event.trigger(_self.map.markers[0], 'click');
+
+	});
+
+
+	this.listen = google.maps.event.addListenerOnce(_self.map_root, "idle", function() {
+		google.maps.event.trigger(_self.map.markers[0], 'click');
+	});
+
+});
