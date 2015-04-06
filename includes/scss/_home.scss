@@ -6,12 +6,41 @@
 	@include bp(lg) {
 		height:400px;
 	}
-
-
 }
-
 
 .home__map{
 	height:100%;
 	width:100%;
+}
+
+.home__options{
+	background:#E6E6E6;
+	padding:20px 0 0 ;
+	@include bp(sm) {
+		padding:40px 0 0;
+	}
+}
+
+.home-option{
+
+	.btn{
+		margin-top:10px;
+		font-size:12px;
+		@include bp(sm) {
+			margin-top:20px;
+		}
+	}
+	p{
+		margin:10px 0 0 0;
+	}
+	img{
+		margin:0 auto;
+		display:block;
+	}
+
+	text-transform:uppercase;
+	text-align:center;
+	font-size:12px;
+	font-family:$f__gotham--bold;
+
 }

@@ -5,8 +5,11 @@ $fa-font-path: "../../bower_components/font-awesome/fonts";
 @import "_base/fonts";
 @import "_base/variables";
 @import "_plugins/bootstrap";
+@import "buttons";
 @import "_base/mixins";
-
+body,html{
+	overflow-x:hidden;
+}
 .site__twitter{
 	background:$c__blue--twitter;
 	border-radius:28px;

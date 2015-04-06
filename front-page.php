@@ -16,8 +16,33 @@ get_header(); ?>
 <section class="home__options">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">
-eggs
+			<div class="col-xs-12 col-sm-3">
+				<div class="home-option">
+					<img src="<?php echo get_template_directory_uri(); ?>/includes/images/home-tile-_0001_accounting-services.png" alt="Accounting Services" class="img-responsive"/>
+					<p>Business Setup<br> and Planning</p>
+					<p><a class="btn btn-blue" href="#">Find Out More</a></p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3">
+				<div class="home-option">
+					<img src="<?php echo get_template_directory_uri(); ?>/includes/images/home-tile-_0002_business-advisory.png" alt="Business Advisory" class="img-responsive"/>
+					<p>Tax<br> Services</p>
+					<p><a class="btn btn-blue" href="#">Find Out More</a></p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3">
+				<div class="home-option">
+					<img src="<?php echo get_template_directory_uri(); ?>/includes/images/home-tile-_0003_tax-services.png" alt="Tax Services" class="img-responsive"/>
+					<p>Business<br> Advisory</p>
+					<p><a class="btn btn-blue" href="#">Find Out More</a></p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3">
+				<div class="home-option">
+					<img src="<?php echo get_template_directory_uri(); ?>/includes/images/home-tile-_0004_business-setup.png" alt="Business Setup" class="img-responsive"/>
+					<p>Accounting<br> Services</p>
+					<p><a class="btn btn-blue" href="#">Find Out More</a></p>
+				</div>
 			</div>
 		</div>
 	</div>

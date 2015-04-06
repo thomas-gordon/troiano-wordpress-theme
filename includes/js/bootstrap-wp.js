@@ -54,36 +54,27 @@ jQuery( document ).ready( function( $ ) {
 		scaledSize: new google.maps.Size(44, 44)
 	};
 
-	var marker = {
+	this.marker = {
 		lat: -37.823960,
 		lng: 145.048803,
+		icon: this.default_icon,
 		infoWindow: {
 			content: '<strong>TROIANO &amp; ASSOCIATES</strong><br>'+
-				'SUITE 2.03/<br>' +
-				'737 BURWOOD RD,<br>' +
-				'HAWTHORN, 3122<br>' +
+			'SUITE 2.03/<br>' +
+			'737 BURWOOD RD,<br>' +
+			'HAWTHORN, 3122<br>' +
 
-				'P.O. BOX 3090 AUBURN 3123 VIC<br><br>'+
+			'P.O. BOX 3090 AUBURN 3123 VIC<br><br>'+
 
-				'<strong>P</strong>: +61 3 8862 6334<br>'+
-				'<strong>F</strong>: +61 3 8676 4989<br>'+
-				'<strong>E</strong>: <a href="mailto:contact_us@troianocpa.com.au">contact_us@troianocpa.com.au</a>'
-		},
-		click: function(e) {
-			console.log('marker clicked');
+			'<strong>P</strong>: +61 3 8862 6334<br>'+
+			'<strong>F</strong>: +61 3 8676 4989<br>'+
+			'<strong>E</strong>: <a href="mailto:contact_us@troianocpa.com.au">contact_us@troianocpa.com.au</a>'
 		}
-
 	};
 
-	marker.icon = this.default_icon;
 
-	this.map.addMarker(marker);
+	this.map.addMarker(this.marker);
 
-
-	google.maps.event.addListener(_self.map_root, 'zoom_changed', function() {
-		google.maps.event.trigger(_self.map.markers[0], 'click');
-
-	});
 
 
 	this.listen = google.maps.event.addListenerOnce(_self.map_root, "idle", function() {
