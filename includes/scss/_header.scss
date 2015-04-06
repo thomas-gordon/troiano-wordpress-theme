@@ -19,21 +19,3 @@
 	}
 }
 
-.site-header__twitter{
-	background:$c__blue--twitter;
-	border-radius:28px;
-	position:absolute;
-	top:0px;
-	width:28px;
-	height:28px;
-	display:block;
-	color:$c__white;
-	right:15px;
-	font-size: 21px;
-	text-align: center;
-	line-height: 28px;
-	@include bp(lg) {
-		top:0px;
-
-	}
-}

@@ -5004,6 +5004,33 @@ button.close {
 .container {
   padding: 0 15px 15px 15px; }
 
+.site__twitter {
+  background: #55acee;
+  border-radius: 28px;
+  position: absolute;
+  top: 0px;
+  width: 28px;
+  height: 28px;
+  display: block;
+  color: #ffffff;
+  right: 15px;
+  font-size: 21px;
+  text-align: center;
+  line-height: 28px; }
+  @media (min-width: 860px) {
+    .site__twitter {
+      top: 0px; } }
+
+.site__twitter--footer {
+  background: #333333; }
+  @media (min-width: 860px) {
+    .site__twitter--footer {
+      top: 20px; } }
+
+strong {
+  font-weight: normal;
+  font-family: 'gotham_htfbold', Arial, sans-serif; }
+
 .site-header {
   padding: 20px 0 0; }
   @media (min-width: 768px) {
@@ -5022,22 +5049,23 @@ button.close {
     .site-header__logo {
       float: left; } }
 
-.site-header__twitter {
-  background: #55acee;
-  border-radius: 28px;
-  position: absolute;
-  top: 0px;
-  width: 28px;
-  height: 28px;
-  display: block;
+.site-footer {
   color: #ffffff;
-  right: 15px;
-  font-size: 21px;
-  text-align: center;
-  line-height: 28px; }
+  background: #4D4D4D;
+  font-size: 11px;
+  padding: 20px 0; }
+  @media (min-width: 768px) {
+    .site-footer {
+      padding: 30px 0; } }
   @media (min-width: 860px) {
-    .site-header__twitter {
-      top: 0px; } }
+    .site-footer {
+      padding: 40px 0; } }
+
+.site-footer__logo {
+  width: 114px;
+  float: left; }
+  .site-footer__logo img {
+    max-width: 100%; }
 
 .site-navigation {
   text-align: center; }
@@ -5056,6 +5084,13 @@ button.close {
       float: right;
       margin-top: 61px; } }
 
+.site-navigation--footer a {
+  color: #ffffff; }
+@media (min-width: 768px) {
+  .site-navigation--footer {
+    float: right;
+    margin-top: 66px; } }
+
 .responsiveMenuSelect {
   margin-top: 10px;
   font-size: 18px; }
@@ -5068,6 +5103,11 @@ button.close {
   #main-menu li:hover .sub-menu {
     display: block; }
   #main-menu > li:last-child a {
+    padding-right: 0; }
+
+#footer-menu {
+  color: #ffffff; }
+  #footer-menu > li:last-child a {
     padding-right: 0; }
 
 .site-nav li {

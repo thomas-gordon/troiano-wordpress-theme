@@ -6,5 +6,36 @@ $fa-font-path: "../../bower_components/font-awesome/fonts";
 @import "_base/variables";
 @import "_plugins/bootstrap";
 @import "_base/mixins";
+
+.site__twitter{
+	background:$c__blue--twitter;
+	border-radius:28px;
+	position:absolute;
+	top:0px;
+	width:28px;
+	height:28px;
+	display:block;
+	color:$c__white;
+	right:15px;
+	font-size: 21px;
+	text-align: center;
+	line-height: 28px;
+	@include bp(lg) {
+		top:0px;
+	}
+}
+.site__twitter--footer{
+	background:#333333;
+	@include bp(lg) {
+		top:20px;
+	}
+}
+
+strong{
+	font-weight:normal;
+	font-family: $f__gotham--bold;
+}
+
 @import "header";
+@import "footer";
 @import "navigation";
