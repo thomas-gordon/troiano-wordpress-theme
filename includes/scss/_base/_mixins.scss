@@ -1,0 +1,18 @@
+$bps: (
+	sm: $screen-sm-min,
+	md: $screen-md-min,
+	lg: $screen-lg-min,
+	xlg: 1400px
+);
+
+@mixin bp($name) {
+	@if  (index(map-keys($bps), $name)) {
+		@media (min-width: map-get($bps, $name)) {
+			@content;
+		}
+	} @else {
+		@warn "Warning: '#{$name}' is not a valid breakpoint name.";
+	}
+}
+
+

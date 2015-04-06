@@ -1,0 +1,37 @@
+{
+  "name": "DefaultTheme",
+  "preferGlobal": false,
+  "repository": "git@bitbucket.org:Squareweave/app-template.git",
+  "version": "1.0.0",
+  "dependencies": {
+    "grunt": "*"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-bower-install-simple": "~1.0.3",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.10.0",
+    "grunt-contrib-imagemin": "~0.8.1",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-uglify": "~0.6.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-prompt": "~1.2.1",
+    "grunt-sass": "~0.18.1",
+    "grunt-shell": "~1.1.1",
+    "grunt-timer": "~0.5.8",
+    "grunt-usemin": "~2.4.0",
+    "jit-grunt": "^0.9.1"
+  },
+  "scripts": {
+    "postinstall": "grunt build",
+    "postupdate": "grunt build",
+    "grunt-develop": "grunt develop",
+    "grunt-develop-verbose": "grunt develop --verbose",
+    "grunt-build": "grunt build",
+    "grunt-build-verbose": "grunt build --verbose"
+  },
+  "engines": {
+    "node": ">=0.6"
+  }
+}

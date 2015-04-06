@@ -1,0 +1,161 @@
+.site-navigation{
+	text-align:center;
+
+	a{
+		font-family: $f__gotham--bold;
+		color:$c__black;
+		font-size:11px;
+		padding:0 10px 5px 10px;
+		display:block;
+		text-transform:uppercase;
+		@include bp(md) {
+			padding:0 25px 5px 25px;
+
+		}
+	}
+	@include bp(sm) {
+		float:right;
+		margin-top:61px;
+	}
+
+}
+
+.responsiveMenuSelect{
+	margin-top:10px;
+	font-size:18px;
+	@include bp(sm) {
+		margin-top:0;
+	}
+}
+
+#main-menu{
+	margin-bottom:0;
+	li:hover{
+		.sub-menu{
+			display:block;
+		}
+	}
+	> li:last-child{
+		a{
+			padding-right:0;
+		}
+	}
+}
+.site-nav{
+	li{
+		position:relative;
+		z-index:30;
+	}
+}
+
+.sub-menu{
+	display:none;
+	position:absolute;
+	z-index:30;
+	top:100%;
+	background:$c__white;
+	width:200px;
+	left:50%;
+	margin-left:-100px;
+	padding:0;
+	border-radius:3px;
+	overflow:hidden;
+	@include transition(0.2s opacity ease-out);
+	-webkit-animation-direction: reverse;
+	animation-direction: reverse;
+	list-style:none;
+	a{
+		padding:20px 40px;
+		@include transition(0.2s all);
+		line-height:1;
+		background:#F8F8F9;
+		display:block;
+		border-bottom:1px solid #CCCCCC;
+		&:hover{
+			text-decoration:none;
+			@include transition(0.2s all);
+			background:$c__green--menu;
+		}
+
+
+	}
+
+}
+
+.section-navigation {
+	.page-item-123{
+		a{
+			background-image:url(../images/menu-tile-_0001_business-advisory.png);
+		}
+	}
+
+	.page-item-125 {
+		a {
+			background-image:url(../images/menu-tile-_0002_tax-services.png);
+
+		}
+	}
+	.page-item-127 {
+		a {
+			background-image:url(../images/menu-tile-_0003_business-setup.png);
+
+		}
+	}
+	ul{
+		margin-bottom:0;
+	}
+	@include bp(sm) {
+		position:relative;
+		height:100%;
+		&:after, &:before{
+			height:100%;
+			content: " ";
+			left:50%;
+			width:9999em;
+			position:absolute;
+			z-index:1;
+			top:0;
+			background:$c__green--menu;
+		}
+		&:after{
+			left:auto;
+			right:50%;
+		}
+
+		.pages-list{
+			position:relative;
+			z-index:2;
+		}
+	}
+
+	li{
+		max-width:25%;
+		margin:0;
+		padding:0;
+		float:left;
+	}
+	a{
+		display:block;
+		height:120px;
+		padding:75px 50px 20px 50px;
+		min-width:220px;
+		line-height:1;
+		text-align:center;
+		font-family:$f__gotham--bold;
+		color:$c__white;
+		background-image:url(../images/menu-tile-_0000_accounting-services.png);
+		background-repeat:no-repeat;
+		background-position:50% 20px;
+		&:hover{
+			background-color:#b4bf28;
+		}
+	}
+	.current_page_item{
+		a{
+			background-color:#b4bf28;
+		}
+	}
+}
+
+
+

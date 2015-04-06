@@ -1,0 +1,22 @@
+$c__white: #ffffff;
+$c__black: #4D4D4D;
+$c__blue--twitter: #55acee;
+$c__green--menu:#D6DE23;
+
+
+$f__gotham--book:'gotham_htfbook', Arial, sans-serif;
+$f__gotham--book-italic:'gotham_htfbook_italic', Arial, sans-serif;
+
+$f__gotham--medium:'gotham_htfmedium', Arial, sans-serif;
+
+$f__gotham--bold:'gotham_htfbold', Arial, sans-serif;
+$f__gotham--bold-italic:'gotham_htfbold_italic', Arial, sans-serif;
+
+$font-family-sans-serif:$f__gotham--book;
+$headings-font-family:$f__gotham--bold;
+$text-color:$c__black;
+$screen-lg: 860px;
+$screen-lg-min:$screen-lg;
+$screen-lg-desktop: $screen-lg;
+$container-large-desktop: ($screen-lg + 15px);
+$container-lg:  $container-large-desktop;
