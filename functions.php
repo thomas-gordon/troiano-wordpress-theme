@@ -97,6 +97,9 @@ function _tk_scripts() {
 	wp_enqueue_script('_tk-bootstrapjs', get_template_directory_uri().'/includes/js/bootstrap.min.js', array('jquery') );
 
 	// load bootstrap wp js
+	wp_enqueue_script( '_tk-gmaps', 'http://maps.google.com/maps/api/js?sensor=true', array('jquery') );
+	wp_enqueue_script( '_tk-gmaps', get_template_directory_uri() . '/includes/js/gmaps.js', array('jquery') );
+
 	wp_enqueue_script( '_tk-bootstrapwp', get_template_directory_uri() . '/includes/js/bootstrap-wp.js', array('jquery') );
 
 	wp_enqueue_script( '_tk-skip-link-focus-fix', get_template_directory_uri() . '/includes/js/skip-link-focus-fix.js', array(), '20130115', true );

@@ -5067,6 +5067,53 @@ strong {
   .site-footer__logo img {
     max-width: 100%; }
 
+.email-subscription {
+  margin-top: 20px; }
+  @media (min-width: 768px) {
+    .email-subscription {
+      margin-top: 0; } }
+
+.email-subscription__form {
+  margin-left: 10px;
+  position: relative;
+  z-index: 1;
+  display: inline-block; }
+
+.email-subscription__field {
+  color: #4D4D4D;
+  margin-top: 2px;
+  border: 0;
+  padding: 3px 20px 3px 3px;
+  width: 150px; }
+  @media (min-width: 768px) {
+    .email-subscription__field {
+      margin-top: 0; } }
+
+.email-subscription__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 20px;
+  border: 0;
+  background: #808080;
+  font-size: 16px;
+  line-height: 100%; }
+
+::-webkit-input-placeholder {
+  color: #808080; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #808080; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #808080; }
+
+:-ms-input-placeholder {
+  color: #808080; }
+
 .site-navigation {
   text-align: center; }
   .site-navigation a {

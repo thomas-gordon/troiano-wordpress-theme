@@ -34,15 +34,16 @@
 						</div>
 					</div>
 					<div class="row text-right">
-						<div class="col-xs-12">
+						<div class="col-xs-12 email-subscription">
 							<strong>SUBSCRIBE TO OUR NEWSLETTER</strong>
 
-							<form action="https://squareweave.us5.list-manage.com/subscribe" method="GET" class="email-subscription">
-								<input type="hidden" name="u" value="61c297def1e2abe02d1c904be">
-								<input type="hidden" name="id" value="6482cdad9b">
-								<input type="email" name="MERGE0" placeholder="Enter your email address" required="required" class="email-subscription__field">
-								<button type="submit" class="email-subscription__button pull-right" value="Join">
-							</form>
+								<form action="https://squareweave.us5.list-manage.com/subscribe" method="GET" class="email-subscription__form">
+									<input type="hidden" name="u" value="61c297def1e2abe02d1c904be">
+									<input type="hidden" name="id" value="6482cdad9b">
+									<input type="email" name="MERGE0" placeholder="Enter your email address" required="required" class="email-subscription__field">
+									<button type="submit" class="email-subscription__button pull-right"><i class="fa fa-caret-right"></i></button>
+								</form>
+
 						</div>
 					</div>
 
