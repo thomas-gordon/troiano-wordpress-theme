@@ -8,6 +8,7 @@ $fa-font-path: "../../bower_components/font-awesome/fonts";
 @import "buttons";
 @import "_base/mixins";
 body,html{
+
 	overflow-x:hidden;
 }
 .site__twitter{
@@ -42,5 +43,6 @@ strong{
 @import "header";
 @import "footer";
 @import "navigation";
+@import "page";
 
 @import "home";

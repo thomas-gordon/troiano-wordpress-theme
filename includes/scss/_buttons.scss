@@ -1,3 +1,10 @@
 .btn-blue{
 	@include button-variant($c__white,#009FF5,#009FF5);
 }
+.btn{
+	font-family: $f__gotham--bold;
+	font-size:14px;
+	text-transform:uppercase;
+	border-radius:0;
+	font-weight:normal;
+}

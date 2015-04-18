@@ -1,0 +1,68 @@
+.entry-content {
+	padding:20px 0;
+	font-size:16px;
+	*{
+		line-height:1.25em !important;
+	}
+	h2{
+		font-family:$f__gotham--light;
+		font-size:24px;
+
+	}
+	h1{
+		font-family:$f__gotham--light;
+		font-size:30px;
+		margin-bottom:36px;
+		@include bp(sm) {
+			font-size:34px;
+			margin-bottom:40px;
+		}
+	}
+	p{
+		margin-bottom:1.25em;
+	}
+	@include bp(sm) {
+		padding:50px 0;
+		font-size:20px;
+	}
+}
+.main-content{
+	background:#F2F2F2;
+}
+
+.contact__form{
+	label{
+		display:block;
+		font-size:14px;
+		font-family:$f__gotham--bold;
+		text-transform: uppercase;
+
+		@include bp(sm) {
+			text-align:right;
+			margin:8px 0 0 0;
+		}
+	}
+	.wpcf7-not-valid-tip{
+		font-size:14px;
+	}
+	.wpcf7-response-output{
+		border:0 !important;
+		font-size:13px;
+		margin:0 0 20px;
+	}
+	input[type="submit"] {
+		margin-top:25px;
+	}
+	input{
+		border:0;
+		font-size:13px;
+	}
+}
+#post-130{
+	p{
+		font-size:13px;
+		font-family:$f__gotham--medium;
+		max-width:580px;
+		margin:0 auto;
+	}
+}

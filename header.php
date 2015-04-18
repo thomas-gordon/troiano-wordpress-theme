@@ -73,14 +73,17 @@
 			$args = array(
 				'depth' => 1,
 				'title_li' => '',
-				'child_of' => $post->ID
+				'child_of' => $post->ID,
+				'sort_order' => 'ASC'
 			);
 
 		} elseif($parent != 0) {
 			$args = array(
 				'depth' => 1,
 				'title_li' => '',
-				'child_of' => $parent
+				'child_of' => $parent,
+				'sort_order' => 'ASC'
+
 			);
 		}
 		//Show pages if this page has more than one sibling
@@ -101,5 +104,5 @@
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 		<div class="row">
-			<div id="content" class="main-content-inner col-sm-12 col-md-8">
+			<div id="content" class="main-content-inner col-sm-12">
 

@@ -25,7 +25,18 @@
 
 }
 
+@font-face {
+	font-family: 'gotham_htflight';
+	src: url('../fonts/gothamhtf-light-webfont.eot');
+	src: url('../fonts/gothamhtf-light-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/gothamhtf-light-webfont.woff2') format('woff2'),
+	url('../fonts/gothamhtf-light-webfont.woff') format('woff'),
+	url('../fonts/gothamhtf-light-webfont.ttf') format('truetype'),
+	url('../fonts/gothamhtf-light-webfont.svg#gotham_htflight') format('svg');
+	font-weight: normal;
+	font-style: normal;
 
+}
 
 
 @font-face {

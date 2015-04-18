@@ -107,7 +107,7 @@ module.exports = function (grunt) {
 				tasks: ['sass:develop']
 			},
 			grunt: {
-				files: ['./style.css'],
+				files: ['./style.css', './includes/css/site.css'],
 				tasks: []
 			},
 			tpl: {
