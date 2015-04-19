@@ -31,7 +31,7 @@
 		<div class="row">
 
 			<div class="col-xs-12">
-				<a class="site__twitter" href="http://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+				<!--<a class="site__twitter" href="http://www.twitter.com/"><i class="fa fa-twitter"></i></a>-->
 
 				<div class="site-header__logo">
 					<a href="/" title="Troiano &amp; Associates"><img src="<?php echo get_template_directory_uri(); ?>/includes/images/troiano-logo-header.png" alt="Troiano &amp; Associates"/></a>

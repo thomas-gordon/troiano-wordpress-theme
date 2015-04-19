@@ -17,7 +17,7 @@
 	background:#E6E6E6;
 	padding:20px 0 0 ;
 	@include bp(sm) {
-		padding:40px 0 0;
+		padding:40px 0 30px;
 	}
 }
 
@@ -44,7 +44,6 @@
 	text-align:center;
 	font-size:12px;
 	font-family:$f__gotham--bold;
-
 }
 
 .home__slider{

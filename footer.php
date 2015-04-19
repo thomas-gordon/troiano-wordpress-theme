@@ -16,7 +16,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<a class="site__twitter site__twitter--footer" href="http://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+				<!--<a class="site__twitter site__twitter--footer" href="http://www.twitter.com/"><i class="fa fa-twitter"></i></a>-->
 
 				<div class="site-footer__logo">
 					<a href="/" title="Troiano &amp; Associates"><img src="<?php echo get_template_directory_uri(); ?>/includes/images/troiano-logo-footer.png" alt="Troiano &amp; Associates"/></a>
@@ -40,9 +40,9 @@
 						<div class="col-xs-12 email-subscription">
 							<strong>SUBSCRIBE TO OUR NEWSLETTER</strong>
 
-								<form action="https://squareweave.us5.list-manage.com/subscribe" method="GET" class="email-subscription__form">
-									<input type="hidden" name="u" value="61c297def1e2abe02d1c904be">
-									<input type="hidden" name="id" value="6482cdad9b">
+								<form target="_blank" action="http://troianocpa.us10.list-manage1.com/subscribe" method="GET" class="email-subscription__form">
+									<input type="hidden" name="u" value="916a17ad7a0598ee8beddf842">
+									<input type="hidden" name="id" value="f7cde58151">
 									<input type="email" name="MERGE0" placeholder="Enter your email address" required="required" class="email-subscription__field">
 									<button type="submit" class="email-subscription__button pull-right"><i class="fa fa-caret-right"></i></button>
 								</form>
