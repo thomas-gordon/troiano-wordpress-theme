@@ -71,7 +71,7 @@ jQuery( document ).ready( function( $ ) {
 
 				'<strong>P</strong>: +61 3 8862 6334<br>'+
 				'<strong>F</strong>: +61 3 8676 4989<br>'+
-				'<strong>E</strong>: <a href="mailto:reception@troianocpa.com.au">reception@troianocpa.com.au</a>'
+				'<strong>E</strong>: <a href="mailto:contact_us@troianocpa.com.au">contact_us@troianocpa.com.au</a>'
 			}
 		};
 

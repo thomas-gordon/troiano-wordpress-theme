@@ -1,23 +1,39 @@
 .site-header{
 	z-index:2000;
 	position:relative;
-	padding:20px 0 ;
+	padding:5px 0 0;
 	.container{
 		padding-bottom:0;
 	}
 	@include bp(sm) {
+		padding:20px 0;
+
 		padding-bottom:0;
 	}
 }
 
 .site-header__logo{
-	width:105px;
-	height:75px;
+	width:200px;
 	img{
 		max-width:100%;
 	}
 	@include bp(sm) {
 		float:left;
+		width:105px;
+		height:75px;
+	}
+}
+.site-header__tax{
+	position:absolute;
+	right:20px;
+	top:0;
+	display:none;
+	@include bp(sm) {
+		display:block;
+	}
+	img{
+		width:60px;
+		margin-left:20px;
 	}
 }
 

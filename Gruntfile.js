@@ -216,7 +216,7 @@ module.exports = function (grunt) {
 	 * `grunt build`: this task creates a production ready version of theme with 1 js file and minified css.
 	 * */
 	grunt.registerTask('build', [], function () {
-		grunt.task.run('bower-install-simple:build', 'sass:build','cmq', 'cssmin', 'useminPrepare', 'concat', 'uglify', 'message:build_done');
+		grunt.task.run('bower-install-simple:build', 'sass:build', 'cssmin', 'useminPrepare', 'concat', 'uglify', 'message:build_done');
 	});
 
 };

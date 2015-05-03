@@ -22,7 +22,7 @@
 					<a href="/" title="Troiano &amp; Associates"><img src="<?php echo get_template_directory_uri(); ?>/includes/images/troiano-logo-footer.png" alt="Troiano &amp; Associates"/></a>
 				</div>
 				<div class="site-navigation site-navigation--footer">
-					<div class="row">
+					<div class="row  hidden-xs">
 						<div class="col-xs-12">
 							<?php wp_nav_menu(
 								array(

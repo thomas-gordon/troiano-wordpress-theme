@@ -31,26 +31,36 @@
 		<div class="row">
 
 			<div class="col-xs-12">
-				<!--<a class="site__twitter" href="http://www.twitter.com/"><i class="fa fa-twitter"></i></a>-->
+				<div class="site-header__tax">
+					<img src="<?php echo get_template_directory_uri(); ?>/includes/images/header-tax-logos/CPA-Public-Practice-RGB-logo-eps.gif" alt="CPA"/>
+					<img src="<?php echo get_template_directory_uri(); ?>/includes/images/header-tax-logos/tax-institute.gif" alt="Troiano &amp; Associates"/>
+				</div>
 
 				<div class="site-header__logo">
-					<a href="/" title="Troiano &amp; Associates"><img src="<?php echo get_template_directory_uri(); ?>/includes/images/troiano-logo-header.png" alt="Troiano &amp; Associates"/></a>
+					<a href="<?php echo site_url(); ?>" title="Troiano &amp; Associates">
+						<img class="hidden-xs" src="<?php echo get_template_directory_uri(); ?>/includes/images/troiano-logo-header.png" alt="Troiano &amp; Associates"/>
+						<img class="visible-xs" src="<?php echo get_template_directory_uri(); ?>/includes/images/troiano-logo-header--mobile.png" alt="Troiano &amp; Associates"/>
+					</a>
 				</div>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-collapse-target">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 				<div class="site-navigation">
-					<div class="row">
-						<div class="col-xs-12">
-							<?php wp_nav_menu(
-								array(
-									'theme_location' 	=> 'primary',
-									'depth'             => 2,
-									'container'         => 'div',
-									'container_class'   => 'site-nav',
-									'menu_id'			=> 'main-menu',
-									'menu_class'        => 'list-inline list-unstyled'
-								)
-							); ?>
-						</div>
-					</div>
+
+						<?php wp_nav_menu(
+							array(
+								'theme_location' 	=> 'primary',
+								'depth'             => 2,
+								'container'         => 'div',
+								'container_id'      => 'js-collapse-target',
+								'container_class'   => 'site-nav collapse navbar-collapse',
+								'menu_id'			=> 'main-menu',
+								'menu_class'        => 'list-unstyled navbar-nav '
+							)
+						); ?>
 
 				</div>
 			</div>
