@@ -207,7 +207,7 @@ module.exports = function (grunt) {
 	 * `grunt develop`: this task runs the watch so your assets update live.
 	 * */
 	grunt.registerTask('develop', [], function () {
-		grunt.task.run('bower-install-simple:develop', 'sass:develop', 'message:welcome', 'watch');
+		grunt.task.run('bower-install-simple:develop', 'sass:build', 'message:welcome', 'watch');
 	});
 
 	/*
@@ -216,7 +216,7 @@ module.exports = function (grunt) {
 	 * `grunt build`: this task creates a production ready version of theme with 1 js file and minified css.
 	 * */
 	grunt.registerTask('build', [], function () {
-		grunt.task.run('bower-install-simple:build', 'sass:build', 'cssmin', 'useminPrepare', 'concat', 'uglify', 'message:build_done');
+		grunt.task.run('bower-install-simple:build', 'sass:build', 'message:build_done');
 	});
 
 };

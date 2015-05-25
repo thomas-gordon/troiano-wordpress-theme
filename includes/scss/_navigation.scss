@@ -23,8 +23,8 @@
 		float:right;
 		margin: 61px 0 0 0;
 		a{
-			background:#fff;
 			border-top:none;
+			background:transparent;
 			&:hover{
 				background:transparent;
 			}
@@ -34,6 +34,9 @@
 .site-navigation--footer{
 	a{
 		color:$c__white;
+		background:transparent;
+		border-top:0;
+
 	}
 	@include bp(sm) {
 		float:right;
@@ -119,32 +122,49 @@
 
 	.page-item-64{
 		a{
-			background-image:url(../images/menu-tile-_0000_accounting-services.png);
-			padding:75px 50px 20px 50px;
-			height:120px;
+			@include bp(sm) {
+				background-image:url(../images/menu-tile-_0000_accounting-services.png);
+			}
 		}
 	}
 	.page-item-123{
 		a{
-			background-image:url(../images/menu-tile-_0001_business-advisory.png);
-			padding:75px 50px 20px 50px;
-			height:120px;
+
+			@include bp(sm) {
+				background-image:url(../images/menu-tile-_0001_business-advisory.png);
+
+			}
 		}
 	}
 	.page-item-125 {
 		a {
-			background-image:url(../images/menu-tile-_0002_tax-services.png);
-			padding:75px 50px 20px 50px;
-			height:120px;
+
+			@include bp(sm) {
+				background-image:url(../images/menu-tile-_0002_tax-services.png);
+
+			}
 		}
 	}
 	.page-item-127 {
 		a {
-			background-image:url(../images/menu-tile-_0003_business-setup.png);
-			padding:75px 50px 20px 50px;
-			height:120px;
+
+			@include bp(sm) {
+				background-image:url(../images/menu-tile-_0003_business-setup.png);
+
+			}
 		}
 	}
+
+	.page-item-265{
+		a {
+
+			@include bp(sm) {
+				background-image:url(../images/menu-tile-_0005_superannuation.png);
+
+			}
+		}
+	}
+
 	ul{
 		margin-bottom:0;
 	}
@@ -171,25 +191,35 @@
 			z-index:2;
 		}
 	}
-
-	li{
-		max-width:25%;
-		margin:0;
-		padding:0;
-		float:left;
+	@include bp(sm) {
+		li {
+			width: 20%;
+			margin: 0;
+			padding: 0;
+			float: left;
+		}
 	}
 	a{
 		display:block;
-		padding:30px 20px;
-		min-width:220px;
+		padding:10px 0;
+		border-bottom:1px solid #fff;
 		line-height:1;
 		text-align:center;
 		font-family:$f__gotham--bold;
 		color:$c__white;
 		background-repeat:no-repeat;
 		background-position:50% 20px;
+		background-color:#b4bf28;
 		&:hover{
 			background-color:#b4bf28;
+
+		}
+		@include bp(sm) {
+			background-color:transparent;
+			padding:30px 20px;
+			border:0;
+			padding:75px 0px 20px 0px;
+			height:120px;
 		}
 	}
 	.current_page_item{

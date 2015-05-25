@@ -5,15 +5,13 @@ $fa-font-path: "../fonts";
 @import "_base/fonts";
 @import "_base/variables";
 @import "_plugins/bootstrap";
-@import "buttons";
+@import "_buttons";
 @import "_base/mixins";
+
 
 body,html{
 	overflow-x:hidden;
 }
-
-
-
 
 .site__twitter{
 	background:$c__blue--twitter;

@@ -100,7 +100,7 @@
 		// and if it has children
 		if(!is_null($args))
 		{?>
-			<div class="section-navigation hidden-xs">
+			<div class="section-navigation">
 				<ul class="pages-list list-unstyled clearfix">
 					<?php wp_list_pages($args);  ?>
 				</ul>

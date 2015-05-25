@@ -18,7 +18,11 @@
 	padding:20px 0 0 ;
 	@include bp(sm) {
 		padding:40px 0 30px;
+		.col-sm-2{
+			width:20% !important;
+		}
 	}
+
 }
 
 .home-option{
@@ -39,6 +43,7 @@
 	}
 	@include bp(sm) {
 		margin-bottom:10px;
+
 	}
 	text-transform:uppercase;
 	text-align:center;
